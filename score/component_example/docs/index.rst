@@ -50,7 +50,9 @@
 Abstract
 ========
 
-[A short (~200 word) description of the component.]
+Integer arithmetic component. It provides ``add``, ``subtract``, ``multiply`` and
+``divide`` on ``std::int64_t`` (units) and ``multiply_add`` (component API). All
+operations return ``std::nullopt`` instead of overflowing or dividing by zero.
 
 
 Specification

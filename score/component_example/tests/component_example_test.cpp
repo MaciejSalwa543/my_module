@@ -14,15 +14,25 @@
 #include "score/component_example/src/component_example.hpp"
 
 #include <gtest/gtest.h>
-#include <string>
+#include <cstdint>
+#include <limits>
 
 namespace score {
 namespace component_example {
 
 // Component Integration Test (CIT) for component_example component.
-TEST(ComponentExampleTest, MakeHelloMessageReturnsExpectedGreeting) {
-    EXPECT_EQ(make_hello_message("World"), "Hello, World!");
-    EXPECT_EQ(make_hello_message("SCORE"), "Hello, SCORE!");
+TEST(ComponentExampleTest, MultiplyAddReturnsExpectedResult) {
+    EXPECT_EQ(multiply_add(6, 7, 0), 42);
+    EXPECT_EQ(multiply_add(2, 3, 4), 10);
+    EXPECT_EQ(multiply_add(-2, 3, 10), 4);
+}
+
+TEST(ComponentExampleTest, MultiplyAddPropagatesMultiplyOverflow) {
+    EXPECT_EQ(multiply_add(std::numeric_limits<std::int64_t>::max(), 2, 0), std::nullopt);
+}
+
+TEST(ComponentExampleTest, MultiplyAddPropagatesAddOverflow) {
+    EXPECT_EQ(multiply_add(std::numeric_limits<std::int64_t>::max(), 1, 1), std::nullopt);
 }
 
 }  // namespace component_example

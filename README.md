@@ -86,16 +86,22 @@ All tests:
 bazel test //...
 ```
 
-Unit tests:
+All module tests (unit, component integration and feature integration):
 
 ```sh
 bazel test //score/...
 ```
 
-Component / Feature integration tests:
+Feature integration tests only:
 
 ```sh
-bazel test //tests/...
+bazel test //score/tests/...
+```
+
+Run the calculator example:
+
+```sh
+bazel run //examples/calculator
 ```
 
 ---

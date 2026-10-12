@@ -10,20 +10,25 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  ********************************************************************************/
-
 #ifndef SCORE_COMPONENT_EXAMPLE_COMPONENT_EXAMPLE_HPP_
 #define SCORE_COMPONENT_EXAMPLE_COMPONENT_EXAMPLE_HPP_
 
-#include <string>
+#include <cstdint>
+#include <optional>
 
 namespace score {
 namespace component_example {
 
-// Unit
-std::string make_hello();
+// Units
+// Each operation returns std::nullopt instead of overflowing or dividing by zero.
+std::optional<std::int64_t> add(std::int64_t a, std::int64_t b);
+std::optional<std::int64_t> subtract(std::int64_t a, std::int64_t b);
+std::optional<std::int64_t> multiply(std::int64_t a, std::int64_t b);
+std::optional<std::int64_t> divide(std::int64_t a, std::int64_t b);
 
 // Component API
-std::string make_hello_message(const std::string& name);
+// Computes a * b + c; returns std::nullopt if any step overflows.
+std::optional<std::int64_t> multiply_add(std::int64_t a, std::int64_t b, std::int64_t c);
 
 }  // namespace component_example
 }  // namespace score

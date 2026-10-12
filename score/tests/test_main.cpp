@@ -18,9 +18,19 @@ namespace component_example {
 
 // Module-level tests (e.g. feature integration tests)
 // Only one component in this example.
-TEST(ComponentExampleTest, MakeHelloMessageReturnsExpectedGreeting) {
-    EXPECT_EQ(make_hello_message("World"), "Hello, World!");
-    EXPECT_EQ(make_hello_message("SCORE"), "Hello, SCORE!");
+TEST(ComponentExampleTest, CalculatorScenarioProducesExpectedResult) {
+    // (10 + 5) * 4 - 20 = 40, then 40 / 8 = 5
+    const auto sum = add(10, 5);
+    ASSERT_TRUE(sum.has_value());
+    const auto value = multiply_add(sum.value(), 4, -20);
+    ASSERT_TRUE(value.has_value());
+    EXPECT_EQ(divide(value.value(), 8), 5);
+}
+
+TEST(ComponentExampleTest, CalculatorScenarioReportsDivisionByZero) {
+    const auto difference = subtract(3, 3);
+    ASSERT_TRUE(difference.has_value());
+    EXPECT_EQ(divide(100, difference.value()), std::nullopt);
 }
 
 }  // namespace component_example
