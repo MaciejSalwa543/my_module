@@ -2,5 +2,9 @@
   {
     "version": "main",
     "url": "https://MaciejSalwa543.github.io/my_module/main/"
+  },
+  {
+    "version": "pr-1",
+    "url": "https://MaciejSalwa543.github.io/my_module/pr-1/"
   }
 ]
