@@ -56,7 +56,7 @@ docs(
     data = [
         "@score_process_description//:needs_json",
     ],
-    project = "Module Template Project",
-    project_url = "https://eclipse-score.github.io/module_template/",
+    project = "My Module Project",
+    project_url = "https://maciejsalwa543.github.io/my_module/",
     source_dir = "docs",
 )

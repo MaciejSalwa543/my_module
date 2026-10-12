@@ -4173,7 +4173,7 @@
     "@@score_bazel_cpp_toolchains+//extensions:gcc.bzl%gcc": {
       "general": {
         "bzlTransitiveDigest": "muOim1Y4TLSENpinhZF/JtW1n+MCplZTMixloQg5zbI=",
-        "usagesDigest": "I5884K0MzTutS9ShDT7kU/rfU7wXKIn15iA5wpaHSqY=",
+        "usagesDigest": "a314sHZq7n3c/EyAz8K2WhHKXHEnGaI7dIafCa5qpxg=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -4655,7 +4655,7 @@
     "@@score_rules_imagefs+//extensions:imagefs.bzl%imagefs": {
       "general": {
         "bzlTransitiveDigest": "QhWu3S0r+BB5gCeNfjskCjQbAFsZrzik1VQs9hwJLfQ=",
-        "usagesDigest": "TUQcBJcpnvQIc4czR0m0qMbqkxdrlpJbeQk5WxyE/lM=",
+        "usagesDigest": "e3/ev8D51P00UC1fU9C/y/krEzGNif5QEhkJfKNJT3Q=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -4796,7 +4796,7 @@
     "@@score_toolchains_rust+//extensions:ferrocene_toolchain_ext.bzl%ferrocene_toolchain_ext": {
       "general": {
         "bzlTransitiveDigest": "9k8SLwP4ec9xXjFivq0Kn0FradTQhcEA+j/WsLxfVPM=",
-        "usagesDigest": "axLJQNLTGRQbV+pVPcXZ7Qh0rSoyoXLX2Povpmj1m3s=",
+        "usagesDigest": "mjKXU0WpXCoVQiW3dsnK16v9hrH+VUKB0W8YWpLk8o8=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},

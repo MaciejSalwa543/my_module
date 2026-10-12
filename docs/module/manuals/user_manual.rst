@@ -106,7 +106,7 @@ Integrating with Your Project
    .. code-block:: python
 
       # In your MODULE.bazel
-      bazel_dep(name = "module_template", version = "1.0")
+      bazel_dep(name = "score_my_module", version = "1.0")
 
 2. Reference in your build files:
 
@@ -114,7 +114,7 @@ Integrating with Your Project
 
       cc_library(
           name = "my_target",
-          deps = ["@module_template//score/component_example:component"],
+          deps = ["@score_my_module//score/component_example:component"],
       )
 
 3. Include headers and compile your code

@@ -12,8 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Module Template Documentation
-=============================
+My Module Documentation
+=======================
 
 <Brief description of the module and the implemented feature(s).>
 
