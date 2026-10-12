@@ -10,7 +10,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 # *******************************************************************************
-module(name = "score_module_template")
+module(name = "score_my_module")
 
 bazel_dep(name = "rules_python", version = "1.8.5", dev_dependency = True)
 
@@ -35,11 +35,11 @@ pip = use_extension(
 pip.parse(
     envsubst = ["PIP_INDEX_URL"],
     extra_pip_args = ["--index-url=${PIP_INDEX_URL:-https://pypi.org/simple/}"],
-    hub_name = "module_template_docs_hub_env",
+    hub_name = "my_module_docs_hub_env",
     python_version = PYTHON_VERSION,
     requirements_lock = "@score_docs_as_code//src:requirements.txt",
 )
-use_repo(pip, "module_template_docs_hub_env")
+use_repo(pip, "my_module_docs_hub_env")
 
 # Add GoogleTest dependency
 bazel_dep(name = "googletest", version = "1.17.0.bcr.2", dev_dependency = True)
