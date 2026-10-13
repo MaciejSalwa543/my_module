@@ -29,11 +29,6 @@ SPDX-FileCopyrightText = "Copyright (c) 2026 Contributors to the Eclipse Foundat
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
-path = [".github/templatesyncignore.txt"]
-SPDX-FileCopyrightText = "Copyright (c) 2026 Contributors to the Eclipse Foundation"
-SPDX-License-Identifier = "Apache-2.0"
-
-[[annotations]]
 path = [".bazelversion"]
 SPDX-FileCopyrightText = "Copyright (c) 2026 Contributors to the Eclipse Foundation"
 SPDX-License-Identifier = "Apache-2.0"
